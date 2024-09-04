@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+    <style>
+        body {
+            background-color: rgb(226, 226, 226);
+            font-family: sans-serif;
+        }
+        .box {
+            padding: 10px;
+            min-height: 100px;
+            background-color: rgb(245, 245, 245);
+            width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 4px 4px 6px rgba(138, 138, 138, 0.733);
+        }
+
+        .makanan {
+            margin: 20px;
+            cursor: default;
+        }
+
+        hr {
+            margin: 10px
+        }
+
+        button {
+            margin: 20px;
+            box-shadow: 1px 1px 2px rgb(168, 168, 168);
+            width: 100px;
+            height: 30px;
+            background: rgb(235, 235, 235);
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: rgb(187, 187, 187);
+            transition: .5s;
+        }
+
+        button:active {
+            background: rgb(136, 136, 136);
+            color: rgb(255, 255, 255);
+            box-shadow:  inset 1px 1px 2px rgb(255, 255, 255);
+        }
+
+        table {
+            margin: 20px;
+            background: rgb(235, 235, 235);
+            cursor: default;
+            width: 500px;
+        }
+
+        table tr td {
+            text-align: center;
+        }
+
+        table tr td img {
+            height: 100px;
+        }
+
+        .box2 {
+            background-color: rgb(245, 245, 245);
+            width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 4px 4px 6px rgba(138, 138, 138, 0.733);
+        }
+
+        .box2 .apa {
+            display: flex;
+            justify-content: center;
+        }
+
+        .minum {
+            cursor: pointer;
+        }
+        
+        .minum:hover {
+            color: rgb(0, 110, 255);
+            text-decoration: underline;
+            transition: .2s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2 class="makanan">Menu Makanan</h2>
+        <hr>
+        <button>Tombol</button>
+        <table border="1px">
+            <tr>
+                <th>NO</th>
+                <th>NAMA</th>
+                <th>HARGA</th>
+                <th>GAMBAR</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nasi goreng</td>
+                <td>Rp. 10.000</td>
+                <td><img src="nasgor.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>nasi uduk</td>
+                <td>Rp. 11.000</td>
+                <td><img src="nasi_udukk.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ayam bakar</td>
+                <td>Rp. 15.000</td>
+                <td><img src="ayam_bakar.jpg" alt=""></td>
+            </tr>
+        </table>
+    </div>
+    <div class="box2">
+        <div class="apa">
+            <h2 class="minum">Butuh minum?</h2>
+        </div>
+    </div>
+</body>
+</html>
